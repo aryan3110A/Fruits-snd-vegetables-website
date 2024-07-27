@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/c7f67bf678.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -16,20 +18,26 @@
         <a href="#" class="logo"><i class='bx bx-basket'></i>Delivery</a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
-
-        <ul class="navbar">
-            <li><a href="#home" class="home-acive">Home</a></li>
-            <li><a href="#categories" > Categories</a></li>            
-            <li><a href="#products" > Products</a></li>
-            <li><a href="#about" > About</a></li>
-            <li><a href="#customers" > Customers</a></li>
-        </ul>
         <div class="profile">
             <img src="img/profile.jpg" alt="">
             <span>Aryan Prajapati</span>
             <i class='bx bx-caret-down'></i>
 
         </div>
+        <nav>
+        <ul class="navbar" id="sidemenu">
+            
+            <li><a href="#home" class="home-acive">Home</a></li>
+            <li><a href="#categories" > Categories</a></li>            
+            <li><a href="#products" > Products</a></li>
+            <li><a href="#about" > About</a></li>
+            <li><a href="#customers" > Customers</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+       
     </header>
 
     <section class="home swiper" id="home">
@@ -40,6 +48,12 @@
                     <h1>Choose Cucumber <br> the best healthy <br> vegetable salad</h1>
                     <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
                 </div>
+                <div class="home-textr">
+                    <span>we are delicacy</span>
+                    <h1>Choose Cucumber  the best healthy  vegetable salad</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                    
+                </div>
                 <img src="img/home1.png" alt="">
             </div>
 
@@ -49,6 +63,11 @@
                     <h1>Choose Cucumber <br> the best healthy <br> vegetable salad</h1>
                     <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
                 </div>
+                <div class="home-textr">
+                    <span>we are delicacy</span>
+                    <h1>Choose Cucumber  the best healthy  vegetable salad</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
                 <img src="img/home2.png" alt="">
             </div>
 
@@ -56,6 +75,11 @@
                 <div class="home-text">
                     <span>we are delicacy</span>
                     <h1>Choose Cucumber <br> the best healthy <br> vegetable salad</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="home-textr">
+                    <span>we are delicacy</span>
+                    <h1>Choose Cucumber  the best healthy  vegetable salad</h1>
                     <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
                 </div>
                 <img src="img/home3.png" alt="">
@@ -317,6 +341,17 @@
     <div class="copyright">
         <p>&#169; Aryan Prajapati all Rights Reserved.</p>
     </div>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
